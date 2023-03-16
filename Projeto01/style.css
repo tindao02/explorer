@@ -38,6 +38,10 @@ p, .footer {
   line-height: 28px;
 }
 
+.footer {
+  margin-bottom: 33px;
+}
+
 .footer a + a {
   margin-left: 28px;
 }
@@ -47,4 +51,10 @@ p, .footer {
   height: 0px;
   border: 1px #ECEFF2 solid;
   margin: 0 auto 8px;
+}
+
+.detalhe-rodape {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
 }

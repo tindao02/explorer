@@ -53,3 +53,11 @@ section + section {
   border: 5px solid rgb(45, 248, 255);
   flex-flow: row wrap;
 }
+
+
+/* JUSTIFY CONTENT */
+.justify-content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}

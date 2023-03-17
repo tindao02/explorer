@@ -61,3 +61,12 @@ section + section {
   justify-content: space-evenly;
   flex-direction: row;
 }
+
+
+/* ALIGN ITEMS */
+.align-items {
+  display: flex;
+  border: 5px solid #85f776;
+  height: 300px;
+  align-items: center;
+}

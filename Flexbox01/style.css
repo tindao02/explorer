@@ -102,3 +102,17 @@ section + section {
 .order-ex div:nth-child(4) {
   order: -1;
 }
+
+
+/* align-self */
+.align-self {
+  display: flex;
+  align-items: flex-start;
+  border: 5px solid #fff;
+  height: 350px;
+  width: 500px;
+}
+
+.align-self div:nth-child(3) {
+  align-self: flex-end;
+}

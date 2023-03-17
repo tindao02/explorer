@@ -86,3 +86,19 @@ section + section {
   flex-wrap: wrap;
   align-content: center;
 }
+
+
+/* ORDER */
+.order {
+  display: flex;
+}
+.order div:nth-child(1) {
+  order: 4;
+}
+
+.order-ex {
+  display: flex;
+}
+.order-ex div:nth-child(4) {
+  order: -1;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  
+  <h1>Position CSS</h1>
+
+  <main>
+    <p>Static: posição padrão dos elementos</p>
+    <p>Relative: posição que podemos modificar as direções</p>
+    <p>Absolute: pode ser referenciar pela tela ou por algum elemento</p>
+    <p>fixed: posição que fixa o elemento na tela</p>
+    <p>Sticky: uma mistura de fixed com relative</p>
+  </main>
+
+  <!-- STATIC -->
+  <div>Static</div>
+  <div class="sticky">Sticky</div>
+  <div>Static 2</div>
+  <div class="relative relative-alterada">
+    Relative
+    <div class="absolute">Absolute</div>
+  </div>
+  <div>Static</div>
+  <p>Este é o meu paragrafo</p>
+  <div class="sticky">Sticky</div>
+  <div>Static</div>
+
+  <!-- RELATIVE -->
+  <div class="relative">
+    Relative
+    <div class="absolute">Absolute</div>
+  </div>
+
+  <!-- ABSOLUTE -->
+  <div class="absolute">Absolute</div>
+
+  <!-- FIXED -->
+  <div class="fixed">Fixed</div>
+
+</body>
+</html>

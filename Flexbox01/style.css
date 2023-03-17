@@ -116,3 +116,22 @@ section + section {
 .align-self div:nth-child(3) {
   align-self: flex-end;
 }
+
+
+/* FLEX FROW */
+.flex-grow {
+  display: flex;
+
+  border: 5px solid #fff;
+  width: 800px;
+}
+
+.flex-grow div {
+  margin: 0;
+  padding: 20px 0;
+  width: 100px;
+  flex-grow: 1;
+}
+.flex-grow div:nth-child(3) {
+  flex-grow: 2;
+}

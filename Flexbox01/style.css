@@ -24,6 +24,7 @@ section + section {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
+
 /* FLEX DIRECTION */
 .flex-direction {
   display: flex;
@@ -36,11 +37,19 @@ section + section {
   }
 }
 
+
 /* FLEX WRAP */
 .flex-wrap {
   display: flex;
   border: 5px solid rgb(45, 248, 255);
   /* width: 500px; */
   flex-wrap: wrap-reverse;
-  
+}
+
+
+/* FLEX FLOW */
+.flex-flow {
+  display: flex; 
+  border: 5px solid rgb(45, 248, 255);
+  flex-flow: row wrap;
 }

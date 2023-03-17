@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(173, 203, 236);
+}
+
 section {
   background-color: #fc4a1ad9;
   width: 100%;
@@ -69,4 +73,16 @@ section + section {
   border: 5px solid #85f776;
   height: 300px;
   align-items: center;
+}
+
+
+/* ALIGN CONTENT */
+.align-content {
+  display: flex;
+  width: 500px;
+  height: 300px;
+  border: 5px solid #fff;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
 }

@@ -184,3 +184,20 @@ section + section {
   width: 200px;
   height: 300px;
 }
+
+
+/* MULTIPLAS ALTURAS */
+.multiplas-alturas {
+  display: flex;
+  justify-content: center;
+}
+
+.multiplas-alturas .card {
+  width: 250px;
+  padding: 0;
+  text-align: left;
+}
+
+.multiplas-alturas .card .card_content {
+  padding: 0 10px;
+}

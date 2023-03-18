@@ -230,9 +230,9 @@ section + section {
   flex-direction: column;
 }
 
-.santo-graal > .content > .sidebar {
-  order: -1;
-}
+/* .santo-graal > .content > .sidebar {
+  order: 1;
+} */
 
 .santo-graal > .content > .main {
   flex: 1;
@@ -248,5 +248,38 @@ section + section {
   }
   .santo-graal > .container > .sidebar {
     order: -1;
+  }
+}
+
+
+/* MENU RESPONSIVO */
+.menu{
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+  .menu-item {
+    flex: 1 1 200px;
+    margin: 5px;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+    .menu-link {
+      color: #fff;
+      display: block;
+      padding: 20px;
+      text-decoration: none;
+    }
+
+@media (min-width: 53.125em) {
+  .menu-item {
+    flex-basis: 100px;
   }
 }

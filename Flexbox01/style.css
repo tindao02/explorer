@@ -201,3 +201,17 @@ section + section {
 .multiplas-alturas .card .card_content {
   padding: 0 10px;
 }
+
+
+/* RODAPÉ FIXO */
+.rodape-fixo {
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+
+.container main{
+  flex: 1;
+  background-color: transparent;
+  border: 0;
+}

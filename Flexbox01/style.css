@@ -210,8 +210,43 @@ section + section {
   min-height: 95vh;
 }
 
-.container main{
+.container > main{
   flex: 1;
   background-color: transparent;
   border: 0;
+}
+
+
+/* SANTO GRAAL */
+.santo-graal {
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+
+.santo-graal > .content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.santo-graal > .content > .sidebar {
+  order: -1;
+}
+
+.santo-graal > .content > .main {
+  flex: 1;
+}
+
+.santo-graal > .content > .sidebar , .santo-graal > .content > .ads {
+  flex-basis: 100px;
+}
+
+@media (min-width: 56.25em) {
+  .santo-graal > .content {
+    flex-direction: row;
+  }
+  .santo-graal > .container > .sidebar {
+    order: -1;
+  }
 }

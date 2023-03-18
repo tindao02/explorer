@@ -135,3 +135,20 @@ section + section {
 .flex-grow div:nth-child(3) {
   flex-grow: 2;
 }
+
+
+/* FLEX SKRINK */
+.flex-shrink {
+  display: flex;
+  border: 5px solid #fff;
+  width: 400px;
+}
+.flex-shrink div{
+  margin: 0;
+  padding: 0px;
+  width: 150px;
+  flex-shrink: 1;
+}
+.flex-shrink div:nth-child(2) {
+  flex-shrink: 3;
+}

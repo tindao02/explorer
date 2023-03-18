@@ -152,3 +152,19 @@ section + section {
 .flex-shrink div:nth-child(2) {
   flex-shrink: 3;
 }
+
+
+/* FLEX BASIS */
+.flex-basis {
+  display: flex;
+  border: 5px solid #fff;
+  /* width: 800px; */
+}
+
+.flex-basis div {
+  margin: 0;
+  padding: 20px 0;
+  /* width: 200px; */
+  /* flex-basis: 200px; */
+  flex: 0 1 300px;
+}

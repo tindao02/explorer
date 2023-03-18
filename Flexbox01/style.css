@@ -283,3 +283,76 @@ section + section {
     flex-basis: 100px;
   }
 }
+
+
+/* WIDGET DE PREVISÃO DO TEMPO */
+.weather {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.weather > div {
+  margin: 10px 0;
+}
+
+.weather-period {
+  flex: 1;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.weather img {
+  height: 50px;
+  min-width: 20px;
+  width: 50px;
+}
+
+.weather-min {
+  font-weight: 700;
+}
+
+.weather-min::after {
+  content: ' - ';
+}
+
+@media (min-width: 37.5em) {
+  .weather {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .weather > div {
+    margin: 0 50px;
+  }
+  .weather-period {
+    font-size: 1.5rem;
+    min-width: 50px;
+    text-align: left;
+  }
+  .weather-minmax {
+    display: flex;
+    flex-direction: column;
+  }
+  .weather-min::after {
+    content: '';
+  }
+}
+
+@media (min-width: 56.25em) {
+  .widget {
+    display: flex;
+    justify-content: center;
+  }
+  .weather {
+    flex-basis: 100px;
+    flex-direction: column;
+  }
+  .weather > div {
+    margin: 10px 0;
+  }
+  .weather-period {
+    flex-basis: 100px;
+  }
+}

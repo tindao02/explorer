@@ -192,3 +192,58 @@ section + section {
     grid-row: 4 / 6;
     grid-column: 4 / 6;
 }
+
+.areas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+    gap: .5rem;
+    
+    grid-template-areas: 
+        "header"
+        "main"
+        "aside"
+        "footer"
+    ;
+}
+
+@media (min-width: 768px) {
+    .areas {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 200px;
+        gap: .5rem;
+        
+        grid-template-areas: 
+            "header     header      header      header"
+            "main       main        main        aside"
+            "footer     footer      footer      footer"
+        ;
+    }
+}
+
+.areas > header {
+    grid-area: header;
+}
+
+.areas > main {
+    grid-area: main;
+}
+
+.areas > aside {
+    grid-area: aside;
+}
+
+.areas > footer {
+    grid-area: footer;
+}
+
+
+.areas > * {
+    background-color: royalblue;
+    padding: 1rem;
+}
+
+.areas > *:nth-child(even) {
+    background-color: skyblue;
+}

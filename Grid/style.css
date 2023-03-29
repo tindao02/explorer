@@ -47,6 +47,7 @@ section + section {
     gap: 10px;
 }
 
+/* Repeat minmax */
 .repeat-minmax {
     display: grid;
     /* grid-template-columns: repeat(2, 200px) 50px; */
@@ -55,6 +56,7 @@ section + section {
     gap: 10px;
 }
 
+/* FR */
 .fr {
     display: grid;
     /* grid-template-columns: 1fr 2fr 3fr; */
@@ -63,6 +65,7 @@ section + section {
     gap: 10px;
 }
 
+/* Alinhamento */
 .alinhamento {
     display: grid;
     grid-template-columns: repeat(4, 200px);
@@ -77,4 +80,20 @@ section + section {
     background: rebeccapurple;
     align-self: end;
     justify-self: start;
+}
+
+/* Ocupando Espaços */
+.ocupando-espacos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 1rem;
+}
+
+.ocupando-espacos >div:nth-child(1) {
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    /* grid-column: 1 / -1; */
+    /* grid-column: 1 / span 2; */
+    grid-column: 1 / 3;
 }

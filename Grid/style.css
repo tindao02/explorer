@@ -9,12 +9,16 @@ section {
     padding: 10px 0;
 }
 
+section + section {
+    margin-top: 10px;
+}
+
 .container > div {
     background-color: royalblue;
     border-radius: 3px;
     border: 1px solid #fff;
     color: #fff;
-    padding: 1rem;
+    padding: 1rem 0;
     text-align: center;
     transition: all 150ms ease;
 }
@@ -40,5 +44,13 @@ section {
 
     /* column-gap: 10px;
     row-gap: 25px; */
+    gap: 10px;
+}
+
+.repeat-minmax {
+    display: grid;
+    /* grid-template-columns: repeat(2, 200px) 50px; */
+    grid-template-columns: repeat(2, 200px) minmax(50px, 250px);
+    grid-auto-rows: 80px;
     gap: 10px;
 }

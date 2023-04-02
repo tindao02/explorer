@@ -301,3 +301,68 @@ section + section {
 .nomes-linhas > *:hover {
     background-color: rgba(255, 255, 255, 0.4);
 }
+
+
+/* PRATICA 01 */
+.pratica-01 {
+    display: grid;
+    gap: .5rem;
+
+    grid-template-areas: 
+        "header"
+        "main"
+        "sidebar"
+        "aside-sec"
+        "footer"
+    ;
+
+    grid-template-columns: 1fr;
+    height: 100vh;
+    margin: 0 auto;
+    /* max-width: 1200px; */
+}
+
+@media (min-width: 48em) {
+    .pratica-01 {
+        grid-template-columns: 1fr repeat(4, minmax(auto, 200px)) 1fr;
+        grid-template-rows: .5fr 2fr .5fr .5fr;
+
+        grid-template-areas: 
+            "header     header          header          header          header          header"
+            ".          main            main            main            sidebar         ."
+            ".          aside-main      aside-main      aside-sec       aside-sec       ."
+            "footer     footer          footer          footer          footer          footer"
+        ;
+    }
+}
+
+.l-header {
+    background: skyblue;
+    grid-area: header;
+}
+
+.l-main {
+    background-color: coral;
+    grid-area: main;
+}
+
+.l-sidebar {
+    background-color: royalblue;
+    grid-area: sidebar;
+}
+
+.l-aside-main {
+    background-color: rebeccapurple;
+    grid-area: aside-main;
+}
+
+.l-aside-sec {
+    background-color: rebeccapurple;
+    grid-area: aside-sec;
+}
+
+.l-footer {
+    background-color: skyblue;
+    grid-area: footer;
+}
+

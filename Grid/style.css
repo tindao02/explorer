@@ -248,3 +248,46 @@ section + section {
 .areas > *:nth-child(even) {
     background-color: skyblue;
 }
+
+
+/* NOMES DE LINHAS */
+.nomes-linhas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+    gap: .5rem;
+}
+
+@media (min-width: 768px) {
+    .nomes-linhas {
+        display: grid;
+        grid-template-columns: [site-start] 1fr repeat(4, 1fr) [site-end] 1fr;
+        grid-auto-rows: 200px;
+        gap: .5rem;
+    }
+}
+
+.nomes-linhas > header,
+.nomes-linhas > footer {
+    /* grid-column: 1 / 6; */
+    /* grid-column: site-start / site-end; */
+    grid-column: site;
+}
+
+.nomes-linhas > * {
+    background-color: royalblue;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    transition: all 150ms ease;
+}
+
+.nomes-linhas > *:nth-child(even) {
+    background-color: skyblue;
+}
+  
+.nomes-linhas > *:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}

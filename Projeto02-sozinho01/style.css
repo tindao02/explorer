@@ -1,0 +1,96 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* GERAL */
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 900px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu ul li  + li {
+  margin-left: 10px;
+}
+
+.menu ul li .btn {
+  padding: 10px;
+  color: #ADAAB5;
+}
+
+.menu ul li .btn:hover {
+  color: #1F1534;
+  font-weight: 700;
+}
+
+
+/* MAIN */
+.main {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.main h1 {
+  font-size: 3em;
+  line-height: 1.2;
+}
+
+.main h1 strong {
+  color: #89C5CC;
+}
+
+.main .conteudo p {
+  display: block;
+  margin: 40px 0;
+  line-height: 2;
+  color: #7D7987;
+}
+
+.botao-comeceja {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  width: fit-content;
+  background: rgb(31, 169, 77);
+  color: #f8f9fc;
+  transition: background .3s;
+  border-radius: 5px;
+}
+
+.botao-comeceja:hover {
+  background: rgba(31, 169, 77, .8);
+}
+
+.botao-comeceja:active {
+  background: rgb(17, 134, 56);
+  color: rgb(163, 235, 187) ;
+  font-weight: 700;
+}
+
+/* FOOTER */
+.footer {
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 20px;
+  font-size: 0.875em;
+}

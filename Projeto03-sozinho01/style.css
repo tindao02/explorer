@@ -1,0 +1,139 @@
+/* GERAL */
+body, * {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, button {
+  font-family: 'Archivo', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.625rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+  padding-top: 50px;
+}
+
+/* FUNDO */
+body {
+  background: #E5E5E5;
+}
+
+body::before {
+  content: ' t';
+  position: absolute;
+  background: #121214;
+  height: 368px;
+  width: 100%;
+  top: 0;
+  z-index: -99;
+}
+
+/* PAGE */
+.page {
+  width: 736px;
+  margin: 74px auto 100px;
+  z-index: 99;
+}
+
+/* HEADER */
+.page .titulo {
+  color: #fff;
+}
+
+header p {
+  color: #42d3ff;
+  line-height: 1.6rem;
+  margin: 24px 0 40px;
+}
+
+/* FORM */
+form {
+  background: #FAFAFC;
+  padding: 14px 64px 64px 64px;
+  border-radius: 8px 8px 0 0;
+}
+
+form h2 {
+  border-bottom: 1px solid #E6E6F0;
+  padding-bottom: 14px;
+}
+
+form label {
+  display: flex;
+  gap: 16px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #4e4958;
+  padding: 24px 0 8px 0;
+  border-left: 10px;
+  cursor: pointer;
+}
+
+form label span {
+  font-size: 0.75rem;
+  color: #a9a7af;
+}
+
+form label span:hover {
+  color: #6c6a71;
+}
+
+input[type=text], input[type=date],input[type=time], textarea, select {
+  border: 1px solid #E6E6F0;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: #6c6a71;
+  background-color: transparent;
+  border-radius: 8px;
+  width: 100%;
+  padding: 14px 24px;
+}
+
+textarea {
+  padding: 2px 2px;
+}
+
+input[type=text]:invalid {
+  border: 2px solid red;
+}
+
+input[type=checkbox] , label[for=evento-privado] {
+  cursor: pointer;
+}
+
+.data-hora {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.data-hora label {
+  display: block;
+}
+
+/* BOTÃO */
+.secao-botao {
+  display: flex;
+  justify-content: center;
+  background: #F0F0F4;
+  padding: 40px 64px ;
+  border-radius: 0 0 8px 8px;
+}
+
+.secao-botao button {
+  background-color: #04D361;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  min-width: 600px;
+  border-radius: 8px;
+  padding: 16px 0;
+}

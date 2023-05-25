@@ -77,3 +77,30 @@ ul li span {
 
   color: #090039;
 }
+
+ul li + li {
+  margin-top: 2rem;
+}
+
+/* MEDIA QUERY */
+@media screen and (width >= 43.75rem) {
+  body {
+    padding: 5rem;
+  }
+
+  main {
+    display: flex;
+    gap: 6.25rem;
+    max-width: 63.75rem;
+  }
+
+  main > div {
+    max-width: 30.25rem;
+  }
+
+  ul li {
+    gap: 3.3125rem;
+    max-width: 28.125rem;
+    align-items: center;
+  }
+}

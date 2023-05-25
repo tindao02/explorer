@@ -9,12 +9,71 @@ ul {
 }
 
 body {
+  font-family: 'Epilogue', sans-serif;
   background: #ECE9FD;
 
-  padding: 60px 23px 66px;
+  padding: 3.75rem 1.4375rem 4.125rem;
+  font-size: 1rem;
+}
+
+main {
+  max-width: 20.625rem;
+  margin: 0 auto;
 }
 
 h1 {
-  font-family: 'Epilogue', sans-serif;
+  font-weight: 800;
   font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+main p:first-child {
+  color: #7158EF;
+  letter-spacing: .3px;
+  text-transform: uppercase;
+  line-height: 2rem;
+
+  margin-bottom: 1.0625rem;
+}
+
+h1 + p {
+  color: rgba(10, 0, 57, 0.64);
+  line-height: 2rem;
+
+  margin-bottom: 2rem;
+}
+
+a {
+  color: #090039;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #09003999;
+  font-weight: 600;
+}
+
+ul {
+  margin-top: 4.5rem;
+}
+
+ul li {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #090039;
+
+  max-width: 16.0625rem;
+
+  display: flex;
+  gap: 2.375rem;
+}
+
+ul li span {
+  font-weight: 800;
+  font-size: 4.5rem;
+  line-height: 5rem;
+  letter-spacing: -2px;
+
+  color: #090039;
 }

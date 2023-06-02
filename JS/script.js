@@ -195,3 +195,44 @@ const maria = {
 
 students = [students[0], maria];
 console.log(students);
+
+
+/*
+  FUNÇÕES
+*/
+console.log(`
+
+FUNÇÕES
+---------
+
+Arrow Function
+
+`);
+
+const funcao01 = function() {
+  console.log('Função 01');
+};
+
+const funcao02 = () => {
+  console.log('Função 02');
+};
+
+funcao01();
+funcao02();
+
+const funcao03 = (nome) => {
+  console.log('Função 03: ', nome);
+};
+
+funcao03('Gertrudes');
+
+
+function Pessoa(nome) {
+  this.nome = nome;
+  this.andar = () => {
+    return this.nome + ' está andando.';
+  }
+}
+
+const joao = new Pessoa('João Marcos');
+console.log(joao.andar());

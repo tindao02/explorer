@@ -235,4 +235,56 @@ function Pessoa(nome) {
 }
 
 const joao = new Pessoa('João Marcos');
-console.log(joao.andar());
+console.log(joao.andar()); 
+
+
+/*
+  CONVERSÃO
+*/
+console.log(`
+
+CONVERSÃO
+-----------
+
+`);
+
+console.log(typeof Number("123"));
+console.log(typeof String(123));
+
+/*
+  QUEBRA COM DUAS CASAS DECIMAIS
+*/
+let numero = 123.456789123;
+console.log(numero);
+
+console.log(Number(numero.toFixed(2)));
+
+/*
+Quantidade de palavras
+*/
+let palavras = "Eu quero viver o Amor!";
+console.log(palavras.split(' ').length);
+
+
+/*
+  CATCH
+*/
+console.log(`
+
+CATCH
+-----------
+
+`);
+
+function meuNome(nome = '') {
+  if(nome === '') {
+    throw 'Nome é Obrigatório, volte.!';
+  }
+  console.log('Nome: ', nome);
+}
+
+try {
+  meuNome();
+} catch (e) {
+  // console.log(e);
+}

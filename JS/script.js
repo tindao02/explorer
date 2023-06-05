@@ -286,5 +286,5 @@ function meuNome(nome = '') {
 try {
   meuNome();
 } catch (e) {
-  // console.log(e);
+  console.log(e);
 }
